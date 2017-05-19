@@ -21,6 +21,10 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    host: process.env.IP,
+    //https: true,
+    port: process.env.PORT,
+    "public": "node-server-tiduslmt.c9users.io" //no trailing slash
   }
 };
